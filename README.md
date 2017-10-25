@@ -1,12 +1,16 @@
-# VA-HW3
-Tarea 3 - Visual Analytics - Temporal Data
+# VA-HW4
+Tarea 4 - Visual Analytics - Network Data
 
-Dataset: [VAST Challenge 2017 MC2](http://vacommunity.org/VAST+Challenge+2017+MC2)
+Dataset: [Yelp Challenge 2016](https://www.yelp.com/dataset)
+
+Consideraciones:
+- Debido a la cantidad de informacion proporcionada en el dataset, se usaron los negocios de Las Vegas y de estos solamente aquellos que tuvieran más de 30 calificaciones. Aún asi, se tomaron en cuenta las tres categorias con más negocios para ver que recomendaciones se podrían generar.
 
 Tareas:
-* Identificar la tendencia de emisiones contaminantes por compuesto quimico
-* Comparar por dias, meses y horas cuales han sido las emisiones de cada compuesto quimico
+* Identificar categorias y agrupamientos por similitud entre categorias
+* Identificar y comparar similitud entre negocios de diferentes categorias para generar recomendaciones o alternativas
 
 Modismos:
-* Streamgraph
-* Heatmap
+* Force directed placement
+* Canales: color (categoria del negocio) y distancia (similitud entre negocios)
+* Marcas: punto (negocio) y linea (similitud)
