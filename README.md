@@ -14,3 +14,5 @@ Modismos:
 * Force directed placement
 * Canales: color (categoria del negocio) y distancia (similitud entre negocios)
 * Marcas: punto (negocio) y linea (similitud)
+
+Click aqui para ir al [demo](https://lincex7845.github.io/VA-HW4/)
