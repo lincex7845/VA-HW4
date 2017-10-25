@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Visual Analytics - Homework 4</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="deck/core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="deck/extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="deck/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="deck/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="deck/extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="deck/extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="deck/themes/style/swiss.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="deck/themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="deck/core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="deck/modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h2>¿Que puedo hacer en Las Vegas además de ir a un casino?</h2>
+      <p>
+        David Camilo Mera D<br/>
+        Visual Analytics<br/>
+        Universidad de los Andes<br/>
+        2017<br/>
+      </p>
+      <footer><p><small>Utilice las teclas de navegacion para interactuar</small> </p></footer>
+    </section>
+
+    <section class="slide">
+      <h2>Negocios más populares en las Vegas</h2>
+      <iframe src="viz/index.html" width="1400" height="600" frameborder="0"></iframe>
+      <ol>
+        <li><p>Se estudiaron las 3 categorias con más negocios en Las Vegas: Restaurants (azul), Food (tomate), Nightlife (verde)</p></li>
+        <li><p>Entre los sitios de tipo Nightlife, 8 de los 21 estudiados son afines a los negocios de las demás categorias. Estos negocios tienen una calificación entre las 2 y 4 estrellas; por el contrario, los negocios de tipo Nightlife con mayor calificacion son los que tienen menor afinidad con los demás </p></li>
+        <li><p>El restaurante Dazling Bistro Food Truck (5 estrellas), es el que presenta mayor afinidad con las demás categorias, principalmente con Public House (Nightlife),  Lip Smacking Foodie Tours (Food) y Chietie Coffee and Roastie (Food)</p></li>
+        <li><p>Hay por lo menos 8 restaurantes que no tienen ningun tipo de similitud, cuyas calificaciones van desde las 1.5 a 5 estrellas</p></li>
+      </ol>
+      
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="deck/jquery.min.js"></script>
+<script src="deck/core/deck.core.js"></script>
+
+<!-- Extensiodeck/n JS files. Add or remove as needed. -->
+<script src="deck/extensions/menu/deck.menu.js"></script>
+<script src="deck/extensions/goto/deck.goto.js"></script>
+<script src="deck/extensions/status/deck.status.js"></script>
+<script src="deck/extensions/navigation/deck.navigation.js"></script>
+<script src="deck/extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
